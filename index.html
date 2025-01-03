@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Voting System</title>
+  <link rel="stylesheet" href="e-voting.css">
+</head>
+<body>
+      <header>
+       <h1>E-Voting System</h1>
+       <nav>
+      <a href="#login">Login</a>
+      <a href="#vote">Vote</a>
+      <a href="#results">Results</a>
+       </nav>
+      </header>
+    
+      <main>
+      <section id="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="vote" style="display: none;">
+      <h2>Vote</h2>
+      <form id="voteForm">
+        <p>Select your candidate:</p>
+        <label>
+          <input type="radio" name="candidate" value="Candidate 1" required>
+          Candidate 1
+        </label>
+        <label>
+          <input type="radio" name="candidate" value="Candidate 2" required>
+          Candidate 2
+        </label>
+        <label>
+          <input type="radio" name="candidate" value="Candidate 3" required>
+          Candidate 3
+        </label>
+        <button type="submit">Submit Vote</button>
+      </form>
+    </section>
+
+    <section id="results" style="display: none;">
+      <h2>Results</h2>
+      <div id="resultsDisplay">
+        <p>Results will be displayed here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 E-Voting System</p>
+  </footer>
+
+  <script src="e-votingscript.js"></script>
+</body>
+</html>
